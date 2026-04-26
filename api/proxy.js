@@ -4,7 +4,7 @@ export default async function handler(req, res) {
   
   // Menggabungkan parameter dari frontend (id, pass, action)
   const params = new URLSearchParams(req.query).toString();
-  const finalUrl = `${https://script.google.com/macros/s/AKfycbw_9Nd7GkluT_WlUnAx2Rj4soPgyKwGpo6HLBumLHBuYxSTpqJUWhmaeZnryIcZZup8/exec}?${params}`;
+  const finalUrl = `${SCRIPT_URL}?${params}`;
 
   try {
     const response = await fetch(finalUrl);
